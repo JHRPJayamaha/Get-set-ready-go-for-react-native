@@ -7,6 +7,7 @@ export default function App() {
       <Text>Hello React Native.</Text>
       <Image
         blurRadius={1}
+        fadeDuration={1000}
         source={{
           width: 200,
           height: 300,
