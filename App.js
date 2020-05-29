@@ -3,7 +3,7 @@ import {
   StyleSheet,
   Text,
   View,
-  TouchableOpacity,
+  TouchableHighlight,
   Image,
   SafeAreaView,
 } from "react-native";
@@ -12,7 +12,7 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <Text>Hello React Native.</Text>
-      <TouchableOpacity onPress={() => console.log("Image Tapped")}>
+      <TouchableHighlight onPress={() => console.log("Image Tapped")}>
         <Image
           blurRadius={1}
           fadeDuration={1000}
@@ -22,7 +22,7 @@ export default function App() {
             uri: "https://picsum.photos/id/237/200/300",
           }}
         />
-      </TouchableOpacity>
+      </TouchableHighlight>
     </SafeAreaView>
   );
 }
