@@ -6,6 +6,7 @@ export default function App() {
     <SafeAreaView style={styles.container}>
       <Text>Hello React Native.</Text>
       <Image
+        blurRadius={1}
         source={{
           width: 200,
           height: 300,
