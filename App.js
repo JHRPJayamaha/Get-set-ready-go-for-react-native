@@ -2,12 +2,16 @@ import React from "react";
 import { StyleSheet, Text, View, Image, SafeAreaView } from "react-native";
 
 export default function App() {
-  //const handlePress = () => console.log("Text pressed");
-
   return (
     <SafeAreaView style={styles.container}>
       <Text>Hello React Native.</Text>
-      <Image source={require("./assets/icon.png")} />
+      <Image
+        source={{
+          width: 200,
+          height: 300,
+          uri: "https://picsum.photos/id/237/200/300",
+        }}
+      />
     </SafeAreaView>
   );
 }
