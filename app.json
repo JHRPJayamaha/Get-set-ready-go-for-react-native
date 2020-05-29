@@ -23,6 +23,8 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": "",
+    "githubUrl": "https://github.com/JHRPJayamaha/Get-set-ready-go-for-react-native"
   }
 }
