@@ -5,6 +5,7 @@ import {
   View,
   TouchableNativeFeedback,
   Image,
+  Alert,
   Button,
   SafeAreaView,
 } from "react-native";
@@ -13,9 +14,13 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <Button
-        color="orange"
         title="Click Me"
-        onPress={() => alert("Button Tapped")}
+        onPress={() =>
+          Alert.alert("My Title", "My Message", [
+            { text: "Yes" },
+            { text: "No" },
+          ])
+        }
       />
     </SafeAreaView>
   );
