@@ -17,24 +17,32 @@ import {
 } from "@react-native-community/hooks";
 
 export default function App() {
-  const { landscape } = useDeviceOrientation();
+  //const { landscape } = useDeviceOrientation();
   return (
-    <SafeAreaView style={[styles.container, containerStyle]}>
+    <View
+      style={{
+        backgroundColor: "#fff",
+        flex: 1,
+      }}
+    >
       <View
         style={{
           backgroundColor: "dodgerblue",
-          width: "100%",
-          height: landscape ? "100%" : "30%",
+          flex: 2,
         }}
-      ></View>
-    </SafeAreaView>
+      />
+      <View
+        style={{
+          backgroundColor: "gold",
+          flex: 1,
+        }}
+      />
+      <View
+        style={{
+          backgroundColor: "tomato",
+          flex: 1,
+        }}
+      />
+    </View>
   );
 }
-const containerStyle = { backgroundColor: "orange" };
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
-  },
-});
